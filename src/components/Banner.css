@@ -1,0 +1,121 @@
+.imageContainer{
+    font-family: var(--ff-base);
+    position: relative;
+    margin-bottom: 5rem;
+    z-index: 0;
+}
+.imageContainer picture img{
+    width: 100%;
+    max-height: 300px;
+}
+.cardBackImage{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    filter: drop-shadow(0 0 0.5rem rgba(15, 15, 15, 0.5));
+    z-index: 0;
+}
+.cardFrontImage{
+    position: absolute;
+    bottom: -38px;
+    left: 10px;
+    width: 300px;
+    filter: drop-shadow(0 0 0.5rem rgba(15, 15, 15, 0.5));
+    z-index: 0;
+}
+.cardLogo{
+    position: absolute;
+    bottom: 70px;
+    left: 40px;
+    width: 60px;
+}
+.bannerData{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 0;
+    color: var(--clr-neutral-white);
+}
+.data__name{
+    font-size: .675rem;
+    bottom: -10px;
+    left: 30px;
+}
+.data__cardNumber{
+    font-size: 1.25rem;
+    bottom: 30px;
+    left: 30px;
+}
+.data__exp{
+    font-size: .675rem;
+    bottom: -10px;
+    left: 250px;
+}
+.data__cvc{
+    font-size: .825rem;
+    top: 80px;
+    right: 50px;
+}
+@media (min-width: 675px){
+    .imageContainer{
+        margin-bottom: 0;
+    }
+    .imageContainer picture img{
+        max-width: 80%;
+        min-height: 100vh;
+    }
+    .cardBackImage{
+        position: absolute;
+        top: auto;
+        bottom: 150px;
+        right: 0;
+        width: 350px;
+    }
+    .cardFrontImage{
+        position: absolute;
+        left: auto;
+        top: 80px;
+        bottom: auto;
+        right: 60px;
+        width: 350px;
+    }
+    .cardLogo{
+        position: absolute;
+        bottom: auto;
+        top: 100px;
+        left: auto;
+        right: 330px;
+        width: 60px;
+    }
+    .data__name{
+        font-size: .875rem;
+        top: 230px;
+        left: calc(100% - 390px);
+        right: auto;
+    }
+    .data__cardNumber{
+        font-size: 1.25rem;
+        top: 190px;
+        bottom: auto;
+        left: auto;
+        right: 170px;
+    }
+    .data__exp{
+        font-size: .875rem;
+        top: 230px;
+        left: auto;
+        right: 80px;
+    }
+    .data__cvc{
+        font-size: .925rem;
+        top: auto;
+        bottom: 258px;
+        left: auto;
+        right: 50px;
+    }
+}

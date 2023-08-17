@@ -1,0 +1,45 @@
+:root {
+  --clr-primary-gradient: linear-gradient(to right,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+  --clr-primary-red: hsl(0, 100%, 66%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-light-grayish-violet: hsl(270, 3%, 87%);
+  --clr-neutral-dark-grayish-violet: hsl(279, 6%, 55%);
+  --clr-neutral-very-dark-violet: hsl(278, 68%, 11%);
+
+  --ff-base: 'Space Grotesk', sans-serif;
+  --fw-regular: 500;
+}
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+  overflow-wrap: break-word;
+  line-height: 1.3;
+}
+a,input,label{
+  text-decoration: none;
+  font: inherit;
+}
+button{
+  font: inherit;
+  border: none;
+  background: none;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+#root, #__next {
+  isolation: isolate;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
